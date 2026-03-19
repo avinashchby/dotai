@@ -1,0 +1,57 @@
+{
+  "name": "dotai",
+  "version": "0.1.0",
+  "description": "One command. Every AI coding assistant configured. Auto-generates CLAUDE.md, .cursorrules, .windsurfrules, copilot-instructions.md, and codex-instructions.md from your codebase.",
+  "type": "module",
+  "bin": {
+    "dotai": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "dev": "tsx src/index.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "ai",
+    "coding-assistant",
+    "claude",
+    "cursor",
+    "copilot",
+    "windsurf",
+    "codex",
+    "cli",
+    "developer-tools",
+    "dotfiles",
+    "codebase-analysis",
+    "static-analysis",
+    "npx"
+  ],
+  "author": "Avinash Chaubey",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/avinashchaubey/dotai.git"
+  },
+  "homepage": "https://github.com/avinashchaubey/dotai",
+  "bugs": {
+    "url": "https://github.com/avinashchaubey/dotai/issues"
+  },
+  "dependencies": {
+    "commander": "^13.1.0",
+    "fast-glob": "^3.3.3",
+    "@inquirer/prompts": "^7.3.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.5",
+    "@types/node": "^22.13.4",
+    "tsx": "^4.19.3"
+  }
+}

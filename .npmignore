@@ -1,0 +1,11 @@
+src/
+tests/
+.github/
+*.ts
+!dist/**/*.d.ts
+tsconfig.json
+vitest.config.ts
+.gitignore
+coverage/
+.env
+.env.*
